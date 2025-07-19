@@ -70,6 +70,7 @@ header{
 }
 .nav-links{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 34px;
 }
@@ -136,7 +137,10 @@ header{
         gap: 30px;
         max-width: 90%;
         margin: 0 auto;
-        flex-wrap: wrap;
+    }
+    .navbar h2{
+        font-size: 1.8rem;
+        font-weight: 800;
     }
     .banner-image{
         max-width: 90%;
@@ -148,5 +152,36 @@ header{
     }
     .nav-links{
         flex-direction: column;
+    }
+}
+
+/* Logo style */
+
+.logo-section{
+    max-width: 1140px;
+    border: 1px solid #bbb;
+    margin: 30px auto 100px;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 35px 0px;
+}
+.logos .logo{
+    margin: 0 auto;
+}
+
+/* Logo responsive */
+
+@media screen and (max-width:576px) {
+    .logo-section{
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    .logos{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 30px;
     }
 }
