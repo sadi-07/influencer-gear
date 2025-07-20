@@ -255,13 +255,13 @@ header{
     max-width: 1040px;
     margin: 50px auto;
 }
-.more p{
+.more a{
     font-weight: 700;
     font-size: 1rem;
     color: rgba(224, 44, 109, 0.87);
     text-align: right;
     display: block;
-    
+    text-decoration: none;
 }
 
 /* Collection section responsive */
@@ -269,7 +269,7 @@ header{
 @media screen and (max-width:576px) {
     .collection-section{
         max-width: 90%;
-        margin: 0px auto;
+        margin: 50px auto;
     }
     .cards{
         grid-template-columns: repeat(1, 1fr);
@@ -281,8 +281,48 @@ header{
     .more{
         max-width: 90%;
     }
-    .more p{
+    .more a{
         margin: 0 auto;
         max-width: 300px;
+    }
+}
+
+/* Features section style */
+
+.features{
+    max-width: 1080px;
+    margin: 80px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.feature-content h2{
+    font-weight: 800;
+    font-size: 2.1rem;
+    color: #0A0826;
+}
+.feature-content p{
+    font-size: 700;
+    font-size: 1.1rem;
+    color: #6C6C6C;
+    margin: 15px 0px;
+}
+.feature-content button i{
+    margin-left: 8px;
+    margin-right: -3px;
+}
+
+/* Feature responsive */
+
+@media screen and (max-width:576px) {
+    .features{
+        flex-direction: column-reverse;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .feature-image img{
+        max-width: 100%;
     }
 }
